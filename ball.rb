@@ -14,7 +14,7 @@ class Ball
 
   def shake
     number = rand(ANSWERS.size)
-    p "\e[#{color(number)}m#{ANSWERS[number]}\e[0m"
+    puts "\e[#{color(number)}m#{ANSWERS[number]}\e[0m"
     ANSWERS[number]
   end
 end
